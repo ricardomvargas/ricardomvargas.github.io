@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="47.125px" height="47.125px" viewBox="0 0 47.125 47.125" enable-background="new 0 0 47.125 47.125" xml:space="preserve">
+<g id="direction-icon">
+	<circle id="circle_6_" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" cx="23.625" cy="23.604" r="22.5"/>
+	<g id="directions-icon">
+		
+			<polygon fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			34.396,20.811 12.661,20.811 9.401,16.463 12.661,12.117 34.396,12.117 		"/>
+		
+			<polygon fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+			12.661,33.85 34.396,33.85 37.655,29.504 34.396,25.156 12.661,25.156 		"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.528" y1="8.857" x2="23.528" y2="12.117"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.528" y1="20.811" x2="23.528" y2="25.156"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="23.528" y1="38.197" x2="23.528" y2="33.85"/>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="21.355" y1="38.197" x2="25.701" y2="38.197"/>
+	</g>
+</g>
+</svg>

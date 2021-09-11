@@ -1,0 +1,130 @@
+#about section .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+#about > section > p {
+  padding-bottom: 15px;
+}
+.img-description {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.opened-img {
+  width: 100%;
+}
+.img-description p {
+  padding: 0;
+  margin: 0;
+}
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal.open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+.modal-bg {
+  position: absolute;
+  background: #1a1a1d;
+  width: 100%;
+  height: 100%;
+  opacity: 70%;
+}
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  appearance: none;
+  background: none;
+  border: 0px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modal-close .icon-close {
+  width: 25px;
+}
+.modal-content .img-nav-button {
+  margin: 5px 10px;
+}
+.modal-content .img-nav-button:hover {
+  cursor: pointer;
+}
+.modal-content p a {
+  text-decoration: underline;
+}
+.modal-content p img {
+  width: 100%;
+}
+.modal-content,
+.div-img-view {
+  background-color: #1a1a1d;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+.img-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  background-image: url(../assets/images/bg-img-description.png);
+}
+.img-description p {
+  width: 90%;
+}
+.pic-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pic-block {
+  background-color: #fff;
+  padding: 3px 3px 0 3px;
+  width: 170px;
+  border-radius: 4px;
+  border: solid 1px #3e3e45;
+  margin: 2px;
+}
+.pic-block:hover {
+  cursor: pointer;
+}
+.pic-img {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+}
+.pic-title {
+  display: block;
+  padding: 7px 0 10px 0;
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  color: #1a1a1d;
+  font-size: 0.85em;
+}
+@media (min-width: 601px) {
+  .modal-content {
+    width: 596px;
+  }
+}
+@media (min-width: 601px) and (orientation: landscape) and (max-height: 453px) {
+  .modal-content,
+  .opened-img {
+    width: 320px;
+    height: 300px;
+  }
+}

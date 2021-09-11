@@ -1,0 +1,38 @@
+#soft-skills ul li {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+#soft-skills ul li .title {
+  margin-bottom: 5px;
+}
+#soft-skills ul li .div-img {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+#soft-skills ul li img {
+  height: 100px;
+}
+@media (min-width: 701px) {
+  #soft-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #soft-skills ul li {
+    width: 48%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  #soft-skills ul li .title {
+    margin-bottom: 5px;
+  }
+  #soft-skills ul li .div-img {
+    margin-right: 10px;
+    display: block;
+  }
+  #soft-skills ul li img {
+    height: 60px;
+  }
+}
