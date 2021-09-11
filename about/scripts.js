@@ -25,7 +25,7 @@ var images = [
   },
   {
     url: '../assets/images/memorable-moments/family-min.png',
-    content: 'Every moment with these girls is memorable!',
+    content: 'Every moment with my family is memorable!',
   },
 ];
 
