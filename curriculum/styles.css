@@ -18,6 +18,9 @@ section p {
   align-items: center;
   flex-wrap: wrap;
 }
+.curriculum-title-content .title {
+  margin-bottom: 3px;
+}
 #resume .experience-section-mobile .section-header .page-title {
   width: 90%;
   font-size: 1.8em;
