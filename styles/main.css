@@ -199,6 +199,9 @@ p {
 .clear-float {
   clear: both;
 }
+.mobile-contact {
+  display: block;
+}
 @media (min-width: 601px) {
   .main-content {
     padding: 0 10px 90px 10px;
@@ -225,6 +228,9 @@ p {
   }
   .content-no-padding {
     padding-top: 0;
+  }
+  .mobile-contact {
+    display: none;
   }
 }
 @media (min-width: 801px) {
