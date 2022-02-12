@@ -1,0 +1,32 @@
+#about footer {
+  text-align: center;
+  padding-top: 20px;
+}
+#about footer .cv-btn {
+  display: inline-block;
+  padding: 1px;
+  background-color: #8d1e41;
+  border-radius: 25px;
+  padding: 15px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+#about footer .cv-btn:hover {
+  background-color: #753a88;
+}
+#about footer .cv-btn:hover {
+  cursor: pointer;
+}
+#about footer .cv-btn img {
+  margin-left: 5px;
+}
+@media (min-width: 601px) {
+  #presentation section {
+    justify-content: center;
+  }
+  #presentation section a img {
+    margin: 0 25px;
+  }
+}

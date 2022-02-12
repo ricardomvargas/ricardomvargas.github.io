@@ -14,6 +14,9 @@
 #soft-skills ul li img {
   height: 100px;
 }
+.div-clear-float {
+  clear: none;
+}
 @media (min-width: 701px) {
   #soft-skills ul {
     display: flex;
@@ -34,5 +37,8 @@
   }
   #soft-skills ul li img {
     height: 60px;
+  }
+  #soft-skills .div-clear-float {
+    clear: both;
   }
 }
