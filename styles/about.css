@@ -1,3 +1,8 @@
+#about {
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+  border-color: #753a88;
+}
 #about footer {
   text-align: center;
   padding-top: 20px;
