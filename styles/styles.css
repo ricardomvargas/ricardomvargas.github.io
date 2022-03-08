@@ -152,6 +152,9 @@ body {
   font-family: 'PT Sans', sans-serif;
   min-width: 320px;
 }
+p {
+  line-height: 1.1em;
+}
 #presentation,
 #about,
 #soft-skills,
@@ -235,6 +238,6 @@ p {
   #presentation main header {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: center;
   }
 }
