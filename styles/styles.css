@@ -193,7 +193,7 @@ p {
 }
 #presentation section {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 15px 0;
 }
 #presentation section a img {
