@@ -3,6 +3,9 @@
   display: flex;
   margin-bottom: 20px;
 }
+#soft-skills ul li p {
+  text-align: justify;
+}
 #soft-skills ul li .title {
   margin-bottom: 5px;
 }
