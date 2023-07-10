@@ -1,0 +1,45 @@
+.hidden,
+.hidden-soft-skill {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.no-width {
+  width: 0%;
+}
+.growing {
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+.hidden-right {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+.hidden-top {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+/*
+* The prefers-reduced-motion CSS media feature is used to detect if the user 
+* has requested that the system minimize the amount of non-essential motion it uses.
+*/
+@media (prefers-reduced-motion) {
+  .hidden,
+  .hidden-right,
+  .hidden-top,
+  .hidden-soft-skill {
+    transition: none;
+  }
+}

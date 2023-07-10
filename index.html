@@ -59,15 +59,18 @@
     <meta name="description" content="Ricardo Vargas | Frontend developer" />
     <link rel="manifest" href="/manifest.json" />
     <link href="styles/styles.css" rel="stylesheet" />
+    <link href="styles/animation.css" rel="stylesheet" />
     <link href="styles/about.css" rel="stylesheet" />
     <link href="styles/soft-skills.css" rel="stylesheet" />
     <link href="styles/tech-skills.css" rel="stylesheet" />
+    <!-- A opção 'defer' server para garantir o script abaixo será carregado apenas depois que
+    os elementos HTML estiverem disponiveis no DOM, ou seja, até que a página seja carregada. -->
+    <script defer src="scripts/script.js"></script>
     <title>Ricardo Vargas | Frontend developer</title>
   </head>
   <body>
-    <article id="presentation">
-      <main>
-        <img src="assets/images/profile-pic-square.jpg" alt="Ricardo Vargas" class="profile-pic" />
+    <article id="header">
+      <main class="hidden-top">
         <header>
           <div>
             <h1>Ricardo Vargas</h1>
@@ -95,7 +98,8 @@
       </main>
     </article>
     <article id="about">
-      <main>
+      <main class="hidden-right">
+        <img src="assets/images/profile-pic-square.jpg" alt="Ricardo Vargas" class="profile-pic" />
         <header>
           <h1>Hi there!</h1>
         </header>
@@ -116,10 +120,10 @@
     <article id="soft-skills">
       <main>
         <header>
-          <h1>What make me special</h1>
+          <h1 class="hidden">What make me special</h1>
         </header>
         <ul>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-communication.svg"
@@ -135,7 +139,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-teamwork.svg"
@@ -146,11 +150,11 @@
             <div>
               <h2 class="title">Team work spirit</h2>
               <p>
-                I’m a team player! I’m not shy to ask for help nor offer, I love to share and learn.
+                I'm a team player! I'm not shy to ask for help nor offer, I love to share and learn.
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-creative-mind.svg"
@@ -166,7 +170,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-bilingual.svg"
@@ -179,7 +183,7 @@
               <p>I'm a native portuguese speaker with an advanced level of english.</p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-solving-problems.svg"
@@ -195,7 +199,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-flexible.svg"
@@ -211,7 +215,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img src="assets/images/soft-skills-emphaty.svg" alt="Emphaty Icon" title="Empathy" />
             </div>
@@ -223,7 +227,7 @@
               </p>
             </div>
           </li>
-          <li>
+          <li class="hidden-soft-skill">
             <div class="div-img">
               <img
                 src="assets/images/soft-skills-accountability.svg"
@@ -244,108 +248,108 @@
         <header>
           <h1>My skills</h1>
         </header>
-        <ul class="left-block">
+        <ul id="tech-skills-list" class="left-block">
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 100%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">HTML</span>
               <span class="skill-percent">100%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 90%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">CSS</span>
               <span class="skill-percent">90%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 90%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Javascript</span>
               <span class="skill-percent">90%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Typescript</span>
               <span class="skill-percent">70%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">React</span>
               <span class="skill-percent">70%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 40%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">React-router</span>
               <span class="skill-percent">40%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">React-intl</span>
               <span class="skill-percent">60%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Redux</span>
               <span class="skill-percent">50%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 45%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">redux-form</span>
               <span class="skill-percent">45%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">react-hook-forms</span>
               <span class="skill-percent">35%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 45%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">SASS</span>
               <span class="skill-percent">45%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Material UI</span>
               <span class="skill-percent">35%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 30%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Bootstrap</span>
               <span class="skill-percent">30%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">styled-components</span>
               <span class="skill-percent">60%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Axios</span>
               <span class="skill-percent">50%</span>
             </div>
@@ -354,105 +358,105 @@
         <ul class="right-block">
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">REST API</span>
               <span class="skill-percent">70%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 10%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">GraphQL</span>
               <span class="skill-percent">10%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Jest</span>
               <span class="skill-percent">35%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Testing Libary</span>
               <span class="skill-percent">35%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 30%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">PHP</span>
               <span class="skill-percent">30%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 20%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Node JS</span>
               <span class="skill-percent">20%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 20%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Net/C#</span>
               <span class="skill-percent">20%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">npm</span>
               <span class="skill-percent">60%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">yarn</span>
               <span class="skill-percent">60%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Git</span>
               <span class="skill-percent">60%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Webpack</span>
               <span class="skill-percent">50%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 10%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">NextJS</span>
               <span class="skill-percent">10%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 15%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">OpenLayers</span>
               <span class="skill-percent">15%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Adobe Illustrator</span>
               <span class="skill-percent">50%</span>
             </div>
           </li>
           <li>
             <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
+              <span class="skill-title-bg no-width"></span>
               <span class="skill-title">Figma</span>
               <span class="skill-percent">60%</span>
             </div>
