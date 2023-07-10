@@ -155,19 +155,27 @@ body {
 p {
   line-height: 1.1em;
 }
-#presentation,
+#header,
 #about,
 #soft-skills,
 #tech-skills {
   width: 100%;
 }
-#presentation main,
+#header main,
 #about main,
 #soft-skills main,
 #tech-skills main {
   padding: 15px 10px;
   max-width: 1000px;
   margin: 0 auto;
+}
+#header main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header main section a img {
+  margin: 0 5px 0 0;
 }
 #about main h1,
 #soft-skills main h1,
@@ -178,25 +186,12 @@ p {
 #tech-skills {
   background-color: #26262a;
 }
-#presentation .profile-pic {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 2%;
-  max-width: 400px;
-  border: solid 1px #753a88;
-  border-radius: 50%;
-}
-#presentation h1,
-#presentation h2 {
-  text-align: center;
-}
-#presentation section {
+#header section {
   display: flex;
   justify-content: space-evenly;
   margin: 15px 0;
 }
-#presentation section a img {
+#header section a img {
   width: 50px;
 }
 h1 {
@@ -211,20 +206,18 @@ h2 {
 p {
   font-size: 1.1em;
 }
-@media (min-width: 801px) {
-  #presentation main .profile-pic {
-    float: left;
-    margin-right: 50px;
+@media (min-width: 601px) {
+  #header main section a img {
+    margin: 0 25px 0 0;
   }
-  #presentation main div h1,
-  #presentation main div h2 {
+}
+@media (min-width: 801px) {
+  #header main div h1,
+  #header main div h2 {
     text-align: left;
   }
-  #presentation main section {
+  #header main section {
     justify-content: start;
-  }
-  #presentation main section a img {
-    margin: 0 25px 0 0;
   }
   #soft-skills {
     clear: both;
@@ -232,12 +225,5 @@ p {
   #soft-skills main h1,
   #tech-skills main h1 {
     text-align: center;
-  }
-}
-@media (min-width: 901px) {
-  #presentation main header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
