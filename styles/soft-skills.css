@@ -1,10 +1,15 @@
+#soft-skills {
+  border-top: solid 1px;
+  border-color: #753a88;
+}
 #soft-skills ul li {
   width: 100%;
   display: flex;
+  align-items: flex-start;
   margin-bottom: 20px;
 }
 #soft-skills ul li p {
-  text-align: justify;
+  text-align: left;
 }
 #soft-skills ul li .title {
   margin-bottom: 5px;
@@ -19,6 +24,11 @@
 }
 .div-clear-float {
   clear: none;
+}
+@media (min-width: 601px) {
+  #soft-skills ul li {
+    align-items: center;
+  }
 }
 @media (min-width: 701px) {
   #soft-skills ul {

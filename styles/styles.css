@@ -153,91 +153,112 @@ body {
   min-width: 320px;
 }
 p {
+  font-size: 1.5em;
   line-height: 1.1em;
 }
-#presentation,
+h1 {
+  font-size: 1.9em;
+  margin-bottom: 5px;
+  text-align: center;
+}
+h2 {
+  font-size: 1.7em;
+  color: #cc2b5e;
+  margin-top: 5px;
+}
+#top-bar {
+  background-color: #26262a;
+}
+#top-bar,
 #about,
 #soft-skills,
 #tech-skills {
   width: 100%;
 }
-#presentation main,
+#top-bar header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+#top-bar .linkedin-pic {
+  margin-right: 15px;
+}
+#top-bar header,
 #about main,
 #soft-skills main,
-#tech-skills main {
+#tech-skills main,
+#my-work main,
+#contact main {
   padding: 15px 10px;
   max-width: 1000px;
   margin: 0 auto;
 }
 #about main h1,
 #soft-skills main h1,
-#tech-skills main h1 {
+#tech-skills main h1,
+#my-work main h1 {
   padding-bottom: 10px;
 }
-#about,
+#my-work,
 #tech-skills {
   background-color: #26262a;
 }
-#presentation .profile-pic {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  border-radius: 2%;
-  max-width: 400px;
-  border: solid 1px #753a88;
-  border-radius: 50%;
+#top-bar h1,
+#top-bar h2 {
+  text-align: left;
 }
-#presentation h1,
-#presentation h2 {
-  text-align: center;
+#top-bar .profile-links {
+  margin-top: 15px;
 }
-#presentation section {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 15px 0;
-}
-#presentation section a img {
+#top-bar section a img {
   width: 50px;
 }
-h1 {
-  font-size: 1.6em;
-  margin-bottom: 5px;
+#contact {
+  text-align: center;
+  border-top: solid 1px;
+  border-color: #753a88;
 }
-h2 {
-  font-size: 1.3em;
-  color: #cc2b5e;
-  margin-top: 5px;
+#contact .mailto {
+  font-weight: bold;
+  text-decoration: underline;
 }
-p {
-  font-size: 1.1em;
+@media (min-width: 601px) {
+  #top-bar header {
+    flex-direction: row;
+  }
+
+  #top-bar .profile-links {
+    margin-top: 0;
+    width: 200px;
+  }
+
+  p {
+    font-size: 1.4em;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  #top-bar section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #top-bar .linkedin-pic {
+    margin-right: 0;
+  }
 }
 @media (min-width: 801px) {
-  #presentation main .profile-pic {
-    float: left;
-    margin-right: 50px;
-  }
-  #presentation main div h1,
-  #presentation main div h2 {
-    text-align: left;
-  }
-  #presentation main section {
-    justify-content: start;
-  }
-  #presentation main section a img {
-    margin: 0 25px 0 0;
-  }
   #soft-skills {
     clear: both;
   }
   #soft-skills main h1,
-  #tech-skills main h1 {
+  #tech-skills main h1,
+  #my-work main h1 {
     text-align: center;
-  }
-}
-@media (min-width: 901px) {
-  #presentation main header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }

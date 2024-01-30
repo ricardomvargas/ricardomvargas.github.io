@@ -60,57 +60,84 @@
     <link rel="manifest" href="/manifest.json" />
     <link href="styles/styles.css" rel="stylesheet" />
     <link href="styles/about.css" rel="stylesheet" />
+    <link href="styles/work.css" rel="stylesheet" />
     <link href="styles/soft-skills.css" rel="stylesheet" />
     <link href="styles/tech-skills.css" rel="stylesheet" />
     <title>Ricardo Vargas | Frontend developer</title>
   </head>
   <body>
-    <article id="presentation">
-      <main>
-        <img src="assets/images/profile-pic-square.jpg" alt="Ricardo Vargas" class="profile-pic" />
-        <header>
-          <div>
-            <h1>Ricardo Vargas</h1>
-            <h2>Frontend developer</h2>
-          </div>
-          <section>
-            <a
-              href="https://www.linkedin.com/in/ricardo-m-vargas/"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | Linkedin Profile"
-            >
-              <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
-            </a>
-            <a
-              href="https://github.com/ricardomvargas"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | GitHub Profile"
-            >
-              <img src="assets/images/github-mobile.svg" alt="Github" />
-            </a>
-          </section>
-        </header>
-      </main>
+    <article id="top-bar">
+      <header>
+        <div>
+          <h1>Ricardo Vargas</h1>
+          <h2>Frontend developer</h2>
+        </div>
+        <section class="profile-links">
+          <a
+            href="https://www.linkedin.com/in/ricardo-m-vargas/"
+            rel="noreferrer"
+            target="_blank"
+            title="Ricardo | Linkedin Profile"
+          >
+            <img src="assets/images/linkedin-mobile.svg" class="linkedin-pic" alt="Linkedin" />
+          </a>
+          <a
+            href="https://github.com/ricardomvargas"
+            rel="noreferrer"
+            target="_blank"
+            title="Ricardo | GitHub Profile"
+          >
+            <img src="assets/images/github-mobile.svg" alt="Github" />
+          </a>
+        </section>
+      </header>
     </article>
     <article id="about">
       <main>
-        <header>
-          <h1>Hi there!</h1>
-        </header>
-        <p>
-          I'm a web developer with 9 years of experience. I started my career as a backend developer
-          and gradually changed my focus to frontend development, because I love to build user
-          interfaces and work close to the UX team. I'm a skilled developer that dominates HTML, CSS
-          and Javascript and I'm currently working with React.
-        </p>
-        <footer>
+        <img src="assets/images/profile-pic-square.jpg" alt="Ricardo Vargas" class="profile-pic" />
+        <div>
+          <p>
+            I’m a web developer with 9 years of experience building applications and websites,
+            during my career I help many companies to build their solutions and websites to better
+            manage their resources and show case their products.<br /><br />Currently working as
+            Frontend Engineer, I’m responsible for maintaining and improving the user interface of
+            large application created for visualization of environments based on 360° panoramic
+          </p>
           <a href="assets/curriculum/rv.pdf" class="cv-btn" download="ricardo-vargas-cv.pdf">
             <span>Download my full CV</span>
             <img src="assets/images/download-icon.svg" alt="Download my full CV" />
           </a>
-        </footer>
+        </div>
+      </main>
+    </article>
+    <article id="my-work">
+      <main>
+        <header>
+          <h1>What can I do</h1>
+        </header>
+        <section class="flex-inverse">
+          <img src="assets/images/temp/website.jpeg" alt="website development" class="right-img" />
+          <div>
+            <h2>Website creation</h2>
+            <p>
+              Working in web development for almost a decade, I have experience creating beautiful
+              websites that not only adapt to any screen size like mobile, tablet and desktop, but
+              also have an intuitive and easy to navigate structure for clients to show case their
+              products and services
+            </p>
+          </div>
+        </section>
+        <section>
+          <img src="assets/images/temp/software.jpeg" alt="app development" class="left-img" />
+          <div>
+            <h2>Application development</h2>
+            <p>
+              I can build customized applications for customers needs, such as content management,
+              e-commerces, sales, stock management and so on. With experience in the backend and
+              frontend, I can deliver a complete application with a great design and user experience
+            </p>
+          </div>
+        </section>
       </main>
     </article>
     <article id="soft-skills">
@@ -131,7 +158,7 @@
               <h2 class="title">Good communication skills</h2>
               <p>
                 I like to chat, period. I Have no problems expressing myself, I rather be honest and
-                talk my mind then let things unsolved.
+                talk my mind then let things unsolved
               </p>
             </div>
           </li>
@@ -146,7 +173,7 @@
             <div>
               <h2 class="title">Team work spirit</h2>
               <p>
-                I’m a team player! I’m not shy to ask for help nor offer, I love to share and learn.
+                I’m a team player! I’m not shy to ask for help nor offer, I love to share and learn
               </p>
             </div>
           </li>
@@ -162,7 +189,7 @@
               <h2 class="title">Creative mindset</h2>
               <p>
                 I think outside the box, sometimes you gotta try crazy things to see if it is going
-                to work.
+                to work
               </p>
             </div>
           </li>
@@ -178,7 +205,7 @@
               <h2 class="title">Polyglot</h2>
               <p>
                 I'm a native Portuguese speaker with an advanced level of English and currently
-                learning Dutch.
+                learning Dutch
               </p>
             </div>
           </li>
@@ -194,7 +221,7 @@
               <h2 class="title">Focus on solving problems</h2>
               <p>
                 Problems are meant to be solved, after that we find the cause and learn from our
-                mistakes.
+                mistakes
               </p>
             </div>
           </li>
@@ -210,7 +237,7 @@
               <h2 class="title">Flexible</h2>
               <p>
                 I'm not afraid of leaving my comfort zone to explore new possibilities or to help a
-                teammate.
+                teammate
               </p>
             </div>
           </li>
@@ -222,7 +249,7 @@
               <h2 class="title">Empathy</h2>
               <p>
                 I don't mind where people come from or what they choose to be, everyone must be
-                respected, love conquers all.
+                respected, love conquers all
               </p>
             </div>
           </li>
@@ -236,7 +263,7 @@
             </div>
             <div>
               <h2 class="title">Accountability and humbleness</h2>
-              <p>I'm not afraid to admit my mistakes, doing so is a great way to evolve.</p>
+              <p>I'm not afraid to admit my mistakes, doing so is a great way to evolve</p>
             </div>
           </li>
         </ul>
@@ -448,6 +475,19 @@
           </li>
         </ul>
         <div class="div-clear-float"></div>
+      </main>
+    </article>
+    <article id="contact">
+      <main>
+        <p>
+          You can reach me through:
+          <a
+            href="mailto:mvargas.ricardo@gmail.com"
+            title="mvargas.ricardo@gmail.com"
+            class="mailto"
+            >mvargas.ricardo@gmail.com</a
+          >
+        </p>
       </main>
     </article>
   </body>
