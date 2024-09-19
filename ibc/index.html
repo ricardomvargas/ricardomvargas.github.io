@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBC - New building funding progress</title>
+    <style>
+        body, div, section, p, h1 {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Helvetica,  monospace;
+            height: 100vh;
+            min-width: 320px;
+        }
+        #main {
+            height: 50%;
+        }
+        #main #top {
+            background: #1f1f1f; 
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+        #main h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+        #main p {
+            font-size: 14px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #main #velocimenter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #top img {
+            width: 150px;
+        }
+        #qrcode {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 50%;
+        }
+        #qrcode section {
+            padding: 15px;
+        }
+        @media (min-width: 550px) {
+            #qrcode section {
+                padding: 15px 0 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <img src="logo.png" alt="IBC - Internation Baptist Church (Eindhoven)" title="IBC - Internation Baptist Church (Eindhoven)" />
+        </div>
+        <h1>New building fund thermostat</h1>
+        <p>Last update: 17-09-2024</p>
+        <p><strong>Current value:</strong> € 1.000,00</p>
+        <section id="velocimenter">
+            <img src="qr-code.png" alt="funding-progress" title="Funding progress" />
+        </section>
+    </div>
+    <div id="qrcode">
+        <img src="qr-code.png" alt="qr-code" title="Bank Account" />
+        <section>
+            <p><strong>Name:</strong> International Baptist Church (Eindhoven)</p>
+            <p><strong>IBAN:</strong> NL91 ABNA 0527 8634 16</p>
+            <p><strong>Description:</strong> Building Fund</p>
+        </section>
+    </div>
+</body>
+</html>
