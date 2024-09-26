@@ -92,6 +92,5 @@ body,
           align-items: start;
           justify-content: space-around;
           flex-direction: row;
-          height: 100vh;
         }
       }
