@@ -178,7 +178,7 @@ p {
 #tech-skills {
   background-color: #26262a;
 }
-#presentation .profile-pic {
+.profile-pic {
   width: 80%;
   display: block;
   margin: 0 auto;
@@ -211,8 +211,16 @@ h2 {
 p {
   font-size: 1.1em;
 }
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-me p {
+    margin-bottom: 15px;
+}
 @media (min-width: 801px) {
-  #presentation main .profile-pic {
+  .profile-pic {
     float: left;
     margin-right: 50px;
   }
@@ -233,6 +241,9 @@ p {
   #tech-skills main h1 {
     text-align: center;
   }
+  .about-me {
+    flex-direction: row;
+}
 }
 @media (min-width: 901px) {
   #presentation main header {
