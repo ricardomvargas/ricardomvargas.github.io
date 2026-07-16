@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -15,11 +15,14 @@
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Ricardo Vargas | Frontend developer" />
+    <meta
+      property="og:image:alt"
+      content="Ricardo Vargas | Senior Software Engineer | Frontend Architectur"
+    />
     <meta
       name="description"
       property="og:description"
-      content="A passionated Frontend developer | React, Typescript, Redux, HTML, CSS, javascript, SASS and more."
+      content="A passionated Software Engineer (Frontend) | React, Typescript, AI, AI engineering, AI skills, AI agents, Redux, HTML, CSS, javascript, SASS and more."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ricardomvargas" />
@@ -28,7 +31,7 @@
     <meta name="twitter:image" content="https://ricardomvargas.github.io/og-img-twiiter.png" />
     <meta
       name="twitter:description"
-      content="A passionated Frontend developer | React, Typescript, Redux, HTML, CSS, javascript, SASS and +."
+      content="A passionated Software Engineer (Frontend) | React, Typescript, AI engineering, AI skills, AI agents and +."
     />
     <link
       rel="apple-touch-icon"
@@ -56,65 +59,78 @@
     <meta name="theme-color" content="#ffffff" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#1a1a1d" />
-    <meta name="description" content="Ricardo Vargas | Frontend developer" />
+    <meta
+      name="description"
+      content="Ricardo Vargas | Senior Software Engineer | Frontend Architecture"
+    />
     <link rel="manifest" href="/manifest.json" />
     <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/about.css" rel="stylesheet" />
-    <link href="styles/soft-skills.css" rel="stylesheet" />
-    <link href="styles/tech-skills.css" rel="stylesheet" />
-    <title>Ricardo Vargas | Frontend developer</title>
+    <title>Ricardo Vargas | Senior Software Engineer | Frontend Architecture</title>
   </head>
   <body>
-    <article id="presentation">
-      <main>
-        <img src="assets/images/profile-pic-square.jpg" alt="Ricardo Vargas" class="profile-pic" />
-        <header>
+    <header class="header">
+      <section class="header__title">
+        <h1>Ricardo Vargas</h1>
+        <h2>Senior Software Engineer</h2>
+      </section>
+      <section class="header__social">
+        <a
+          href="https://www.linkedin.com/in/ricardo-m-vargas/"
+          rel="noreferrer"
+          target="_blank"
+          title="Ricardo | Linkedin Profile"
+        >
+          <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
+        </a>
+        <a
+          href="https://github.com/ricardomvargas"
+          rel="noreferrer"
+          target="_blank"
+          title="Ricardo | GitHub Profile"
+        >
+          <img src="assets/images/github-mobile.svg" alt="Github" />
+        </a>
+      </section>
+    </header>
+    <main id="content">
+      <section class="about">
+        <div>
+          <img
+            src="assets/images/profile-pic-square.jpg"
+            alt="Ricardo Vargas"
+            class="profile-pic"
+          />
           <div>
-            <h1>Ricardo Vargas</h1>
-            <h2>Frontend developer</h2>
+            <p>
+              I'm a Senior Software Engineer specializing in web development and frontend
+              architecture, with strong expertise in JavaScript, TypeScript and React. Throughout my
+              career, I've worked across backend, full stack and frontend roles, helping teams
+              modernize legacy systems, build scalable solutions and improve developer experience.
+            </p>
+            <p>
+              Today, my main focus is building scalable frontend platforms, designing reusable UI
+              systems, modernizing legacy applications and collaborating closely with Product and UX
+              teams to deliver intuitive, maintainable software. While frontend remains my strongest
+              expertise, I also enjoy expanding my backend knowledge through personal projects and
+              volunteer work.
+            </p>
+            <p>
+              I'm passionate about AI-assisted software engineering and enjoy exploring how AI can
+              help engineers work more efficiently and build better software. I enjoy solving
+              challenging technical problems, learning new technologies, mentoring other developers
+              and building software that balances business needs, user experience and engineering
+              excellence.
+            </p>
           </div>
-          <section>
-            <a
-              href="https://www.linkedin.com/in/ricardo-m-vargas/"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | Linkedin Profile"
-            >
-              <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
-            </a>
-            <a
-              href="https://github.com/ricardomvargas"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | GitHub Profile"
-            >
-              <img src="assets/images/github-mobile.svg" alt="Github" />
-            </a>
-          </section>
-        </header>
-      </main>
-    </article>
-    <article id="about">
-      <main>
-        <header>
-          <h1>Hi there!</h1>
-        </header>
-        <p>
-          I'm a web developer with 10 years of experience. I started my career as a backend
-          developer and gradually changed my focus to frontend development, because I love to build
-          user interfaces and work close to the UX team. I'm a skilled developer that dominates
-          HTML, CSS and Javascript and I'm currently working with React.
-        </p>
-        <footer>
+        </div>
+        <div>
           <a href="assets/curriculum/rv.pdf" class="cv-btn" download="ricardo-vargas-cv.pdf">
             <span>Download my full CV</span>
             <img src="assets/images/download-icon.svg" alt="Download my full CV" />
           </a>
-        </footer>
-      </main>
-    </article>
-    <article id="soft-skills">
-      <main>
+        </div>
+      </section>
+      <section class="soft-skills">
         <header>
           <h1>What make me special</h1>
         </header>
@@ -128,10 +144,11 @@
               />
             </div>
             <div>
-              <h2 class="title">Good communication skills</h2>
+              <h2 class="title">Good communication</h2>
               <p>
-                I like to chat, period. I Have no problems expressing myself, I rather be honest and
-                talk my mind then let things unsolved.
+                I value open and honest communication. I believe that clear discussions help teams
+                align expectations, solve problems more effectively and build stronger working
+                relationships.
               </p>
             </div>
           </li>
@@ -144,9 +161,11 @@
               />
             </div>
             <div>
-              <h2 class="title">Team work spirit</h2>
+              <h2 class="title">Team player</h2>
               <p>
-                I’m a team player! I’m not shy to ask for help nor offer, I love to share and learn.
+                I enjoy collaborating with others, sharing knowledge and learning from different
+                perspectives. I’m comfortable asking for help when needed and supporting teammates
+                whenever I can.
               </p>
             </div>
           </li>
@@ -159,10 +178,10 @@
               />
             </div>
             <div>
-              <h2 class="title">Creative mindset</h2>
+              <h2 class="title">Creative Thinking</h2>
               <p>
-                I think outside the box, sometimes you gotta try crazy things to see if it is going
-                to work.
+                I enjoy exploring different perspectives and challenging assumptions. Some of the
+                best solutions emerge when we're willing to look beyond conventional approaches.
               </p>
             </div>
           </li>
@@ -175,10 +194,10 @@
               />
             </div>
             <div>
-              <h2 class="title">Polyglot</h2>
+              <h2 class="title">Multilingual</h2>
               <p>
-                I'm a native Portuguese speaker with an advanced level of English and currently
-                learning Dutch.
+                Portuguese is my native language. I’m fluent in English and currently learning
+                Dutch.
               </p>
             </div>
           </li>
@@ -191,10 +210,11 @@
               />
             </div>
             <div>
-              <h2 class="title">Focus on solving problems</h2>
+              <h2 class="title">Problem Solving</h2>
               <p>
-                Problems are meant to be solved, after that we find the cause and learn from our
-                mistakes.
+                I enjoy tackling complex problems and finding practical solutions. Once a problem is
+                solved, I believe it's important to understand its root cause and learn from the
+                experience.
               </p>
             </div>
           </li>
@@ -207,10 +227,10 @@
               />
             </div>
             <div>
-              <h2 class="title">Flexible</h2>
+              <h2 class="title">Adaptability</h2>
               <p>
-                I'm not afraid of leaving my comfort zone to explore new possibilities or to help a
-                teammate.
+                I’m comfortable stepping outside my comfort zone to learn new technologies, take on
+                unfamiliar challenges or support the needs of the team.
               </p>
             </div>
           </li>
@@ -219,10 +239,10 @@
               <img src="assets/images/soft-skills-emphaty.svg" alt="Emphaty Icon" title="Empathy" />
             </div>
             <div>
-              <h2 class="title">Empathy</h2>
+              <h2 class="title">Empathy & Respect</h2>
               <p>
-                I don't mind where people come from or what they choose to be, everyone must be
-                respected, love conquers all.
+                I believe successful teams are built on mutual respect, trust and understanding.
+                Different backgrounds and perspectives make teams stronger.
               </p>
             </div>
           </li>
@@ -240,215 +260,7 @@
             </div>
           </li>
         </ul>
-      </main>
-    </article>
-    <article id="tech-skills">
-      <main>
-        <header>
-          <h1>My skills</h1>
-        </header>
-        <ul class="left-block">
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 100%"></span>
-              <span class="skill-title">HTML</span>
-              <span class="skill-percent">100%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 100%"></span>
-              <span class="skill-title">CSS</span>
-              <span class="skill-percent">100%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 100%"></span>
-              <span class="skill-title">Javascript</span>
-              <span class="skill-percent">100%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
-              <span class="skill-title">Typescript</span>
-              <span class="skill-percent">70%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 80%"></span>
-              <span class="skill-title">React</span>
-              <span class="skill-percent">80%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 40%"></span>
-              <span class="skill-title">React-router</span>
-              <span class="skill-percent">40%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
-              <span class="skill-title">React-intl</span>
-              <span class="skill-percent">60%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
-              <span class="skill-title">Redux</span>
-              <span class="skill-percent">50%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 45%"></span>
-              <span class="skill-title">SASS</span>
-              <span class="skill-percent">45%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
-              <span class="skill-title">Material UI</span>
-              <span class="skill-percent">35%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 30%"></span>
-              <span class="skill-title">Bootstrap</span>
-              <span class="skill-percent">30%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
-              <span class="skill-title">styled-components</span>
-              <span class="skill-percent">60%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
-              <span class="skill-title">Axios</span>
-              <span class="skill-percent">50%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 10%"></span>
-              <span class="skill-title">GraphQL</span>
-              <span class="skill-percent">10%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
-              <span class="skill-title">Jest</span>
-              <span class="skill-percent">35%</span>
-            </div>
-          </li>
-        </ul>
-        <ul class="right-block">
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
-              <span class="skill-title">REST API</span>
-              <span class="skill-percent">70%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 35%"></span>
-              <span class="skill-title">Testing Libary</span>
-              <span class="skill-percent">35%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
-              <span class="skill-title">npm</span>
-              <span class="skill-percent">60%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
-              <span class="skill-title">yarn</span>
-              <span class="skill-percent">60%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 70%"></span>
-              <span class="skill-title">Git</span>
-              <span class="skill-percent">70%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
-              <span class="skill-title">Webpack</span>
-              <span class="skill-percent">50%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 10%"></span>
-              <span class="skill-title">NextJS</span>
-              <span class="skill-percent">10%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 15%"></span>
-              <span class="skill-title">OpenLayers</span>
-              <span class="skill-percent">15%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 20%"></span>
-              <span class="skill-title">PHP</span>
-              <span class="skill-percent">20%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 20%"></span>
-              <span class="skill-title">Node JS</span>
-              <span class="skill-percent">20%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 20%"></span>
-              <span class="skill-title">Net/C#</span>
-              <span class="skill-percent">20%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 50%"></span>
-              <span class="skill-title">Adobe Illustrator</span>
-              <span class="skill-percent">50%</span>
-            </div>
-          </li>
-          <li>
-            <div class="skill-description">
-              <span class="skill-title-bg" style="width: 60%"></span>
-              <span class="skill-title">Figma</span>
-              <span class="skill-percent">60%</span>
-            </div>
-          </li>
-        </ul>
-        <div class="div-clear-float"></div>
-      </main>
-    </article>
+      </section>
+    </main>
   </body>
 </html>

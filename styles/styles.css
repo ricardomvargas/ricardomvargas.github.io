@@ -1,4 +1,4 @@
-/*********** CSS RESET ***********/
+/*********** CSS RESET - start ***********/
 html {
   box-sizing: border-box;
 }
@@ -97,147 +97,207 @@ video {
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
-/*********** HTML5 display-role reset for older browsers ***********/
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
+/*********** CSS RESET - end ***********/
+
+/*********** VARIABLES ***********/
+:root {
+  /* Colors */
+  --color-bg: #1a1a1d;
+  --color-text: #dddbdb;
+  --color-accent: #753a88;
+  --color-accent-secondary: #8d1e41;
+  --color-accent-pink: #cc2b5e;
+  --color-section-bg: #26262a;
+
+  /* Fonts */
+  --font-primary: 'PT Sans', sans-serif;
+
+  /* Typography */
+  --font-size-base: 1.1em;
+  --font-size-title: 1.8em;
+  --font-size-subtitle: 1.2em;
+
+  /* Spacing */
+  --spacing-section-mobile: 2rem 1rem;
+  --spacing-section-desktop: 3rem 5rem;
+  --spacing-icon-small: 40px;
+  --spacing-icon-large: 80px;
 }
+
+/*********** GLOBAL STYLES ***********/
 body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-button,
-button:focus,
-button:hover {
-  padding: 0;
-  margin: 0;
-  border: none;
-  background: none;
-}
-/*********** WEB SITE STYLES ***********/
-html {
-  background-color: #1a1a1d;
-}
-body {
-  color: #dddbdb;
-  font-family: 'PT Sans', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-primary);
   min-width: 320px;
 }
-p {
-  line-height: 1.1em;
+
+p,
+a {
+  font-size: var(--font-size-base);
+  line-height: 1.3;
+  color: var(--color-text);
 }
-#presentation,
-#about,
-#soft-skills,
-#tech-skills {
-  width: 100%;
-}
-#presentation main,
-#about main,
-#soft-skills main,
-#tech-skills main {
-  padding: 15px 10px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-#about main h1,
-#soft-skills main h1,
-#tech-skills main h1 {
-  padding-bottom: 10px;
-}
-#about,
-#tech-skills {
-  background-color: #26262a;
-}
-#presentation .profile-pic {
+
+.profile-pic {
   width: 80%;
   display: block;
-  margin: 0 auto;
-  border-radius: 2%;
-  max-width: 400px;
-  border: solid 1px #753a88;
   border-radius: 50%;
+  max-width: 400px;
+  border: solid 1px var(--color-accent);
+  margin: 0 auto 1.5rem auto;
 }
-#presentation h1,
-#presentation h2 {
-  text-align: center;
+
+.cv-btn {
+  display: inline-block;
+  padding: 15px;
+  background-color: var(--color-accent-secondary);
+  border-radius: 25px;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
-#presentation section {
+
+.cv-btn:hover {
+  background-color: var(--color-accent);
+  cursor: pointer;
+}
+
+.cv-btn img {
+  margin-left: 5px;
+}
+
+/*********** HEADER ***********/
+.header {
   display: flex;
-  justify-content: space-evenly;
-  margin: 15px 0;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--spacing-section-mobile);
 }
-#presentation section a img {
-  width: 50px;
+
+.header__title h1 {
+  font-size: var(--font-size-title);
+  margin-bottom: 0.2rem;
 }
-h1 {
-  font-size: 1.6em;
-  margin-bottom: 5px;
+
+.header__title h2 {
+  font-size: var(--font-size-subtitle);
+  font-weight: normal;
+  color: var(--color-accent-pink);
 }
-h2 {
-  font-size: 1.3em;
-  color: #cc2b5e;
-  margin-top: 5px;
+
+.header__social {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.1rem;
 }
-p {
-  font-size: 1.1em;
+
+.header__social img {
+  width: var(--spacing-icon-small);
+  height: var(--spacing-icon-small);
 }
+
+/*********** ABOUT ***********/
+.about {
+  background-color: var(--color-section-bg);
+  border-top: 2px solid var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+  padding: var(--spacing-section-mobile);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+}
+
+/*********** SOFT SKILLS ***********/
+.soft-skills {
+  padding: var(--spacing-section-mobile);
+}
+
+.soft-skills h1 {
+  font-size: var(--font-size-title);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.soft-skills ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.soft-skills li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.soft-skills .div-img {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.soft-skills .div-img img {
+  width: var(--spacing-icon-large);
+  height: var(--spacing-icon-large);
+}
+
+.soft-skills h2 {
+  font-size: var(--font-size-subtitle);
+  font-weight: normal;
+  color: var(--color-accent-pink);
+  margin-bottom: 0.5rem;
+}
+
+.soft-skills p {
+  text-align: left;
+}
+
+/*********** MEDIA QUERIES ***********/
 @media (min-width: 801px) {
-  #presentation main .profile-pic {
-    float: left;
-    margin-right: 50px;
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--spacing-section-desktop);
   }
-  #presentation main div h1,
-  #presentation main div h2 {
+
+  .header__title {
     text-align: left;
   }
-  #presentation main section {
-    justify-content: start;
+
+  .about {
+    padding: var(--spacing-section-desktop);
   }
-  #presentation main section a img {
-    margin: 0 25px 0 0;
-  }
-  #soft-skills {
-    clear: both;
-  }
-  #soft-skills main h1,
-  #tech-skills main h1 {
-    text-align: center;
-  }
-}
-@media (min-width: 901px) {
-  #presentation main header {
+
+  .about > div:first-child {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    gap: 3rem;
+  }
+
+  .profile-pic {
+    width: 300px;
+    flex-shrink: 0;
+  }
+
+  .soft-skills {
+    padding: var(--spacing-section-desktop);
+  }
+
+  .soft-skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 3rem;
   }
 }
