@@ -65,52 +65,42 @@
     />
     <link rel="manifest" href="/manifest.json" />
     <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/about.css" rel="stylesheet" />
-    <link href="styles/soft-skills.css" rel="stylesheet" />
-    <link href="styles/tech-skills.css" rel="stylesheet" />
     <title>Ricardo Vargas | Senior Software Engineer | Frontend Architecture</title>
   </head>
   <body>
-    <article id="presentation">
-      <main>
-        <header>
-          <div>
-            <h1>Ricardo Vargas</h1>
-            <h2>Senior Software Engineer</h2>
-          </div>
-          <section>
-            <a
-              href="https://www.linkedin.com/in/ricardo-m-vargas/"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | Linkedin Profile"
-            >
-              <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
-            </a>
-            <a
-              href="https://github.com/ricardomvargas"
-              rel="noreferrer"
-              target="_blank"
-              title="Ricardo | GitHub Profile"
-            >
-              <img src="assets/images/github-mobile.svg" alt="Github" />
-            </a>
-          </section>
-        </header>
-      </main>
-    </article>
-    <article id="about">
-      <main>
-        <section class="about-me">
+    <header class="header">
+      <section class="header__title">
+        <h1>Ricardo Vargas</h1>
+        <h2>Senior Software Engineer</h2>
+      </section>
+      <section class="header__social">
+        <a
+          href="https://www.linkedin.com/in/ricardo-m-vargas/"
+          rel="noreferrer"
+          target="_blank"
+          title="Ricardo | Linkedin Profile"
+        >
+          <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
+        </a>
+        <a
+          href="https://github.com/ricardomvargas"
+          rel="noreferrer"
+          target="_blank"
+          title="Ricardo | GitHub Profile"
+        >
+          <img src="assets/images/github-mobile.svg" alt="Github" />
+        </a>
+      </section>
+    </header>
+    <main id="content">
+      <section class="about">
+        <div>
           <img
             src="assets/images/profile-pic-square.jpg"
             alt="Ricardo Vargas"
             class="profile-pic"
           />
           <div>
-            <header>
-              <h1>Hi there!</h1>
-            </header>
             <p>
               I'm a Senior Software Engineer specializing in web development and frontend
               architecture, with strong expertise in JavaScript, TypeScript and React. Throughout my
@@ -132,17 +122,15 @@
               excellence.
             </p>
           </div>
-        </section>
-        <footer>
+        </div>
+        <div>
           <a href="assets/curriculum/rv.pdf" class="cv-btn" download="ricardo-vargas-cv.pdf">
             <span>Download my full CV</span>
             <img src="assets/images/download-icon.svg" alt="Download my full CV" />
           </a>
-        </footer>
-      </main>
-    </article>
-    <article id="soft-skills">
-      <main>
+        </div>
+      </section>
+      <section class="soft-skills">
         <header>
           <h1>What make me special</h1>
         </header>
@@ -272,7 +260,7 @@
             </div>
           </li>
         </ul>
-      </main>
-    </article>
+      </section>
+    </main>
   </body>
 </html>
