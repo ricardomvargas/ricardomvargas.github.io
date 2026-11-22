@@ -178,6 +178,7 @@ a:focus-visible {
 /*********** GLOBAL CLASSES ***********/
 .profile-pic {
   width: min(70vw, 260px);
+  height: auto;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
