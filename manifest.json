@@ -1,22 +1,22 @@
 {
-  "short_name": "RV | Front-end",
-  "name": "Ricardo Vargas | Front-end developer",
+  "short_name": "Ricardo Vargas",
+  "name": "Ricardo Vargas | Senior Software Engineer",
+  "description": "Senior Software Engineer with 10+ years building scalable web platforms with React and TypeScript, and applying AI-assisted engineering with Claude Code.",
   "icons": [
     {
-      "src": "/logo192.png",
+      "src": "/assets/images/icons-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/android-chrome-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
+      "src": "/assets/images/icons-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone",
-  "description": "A passionated front end developer | React, Typescript, Redux, HTML, CSS, javascript and SASS."
+  "theme_color": "#1a1a1d",
+  "background_color": "#1a1a1d",
+  "display": "standalone"
 }
