@@ -6,7 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="author" content="Ricardo Vargas" />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <meta property="og:site_name" content="Ricardo | Frontend developer" />
     <meta property="og:url" content="https://ricardomvargas.github.io/" />
     <meta property="og:type" content="article" />
@@ -17,12 +20,12 @@
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Ricardo Vargas | Senior Software Engineer | Frontend Architectur"
+      content="Ricardo Vargas | Senior Software Engineer | Frontend, FullStack and AI Engineering"
     />
     <meta
       name="description"
       property="og:description"
-      content="A passionated Software Engineer (Frontend) | React, Typescript, AI, AI engineering, AI skills, AI agents, Redux, HTML, CSS, javascript, SASS and more."
+      content="A passionate Software Engineer (Frontend, FullStack and AI Engineering) | React, Typescript, AI engineering, Claude Code, context engineering, multi-agent, RAG, AI skills, AI agents, Redux, HTML, CSS, javascript, SASS and more."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@ricardomvargas" />
@@ -31,7 +34,7 @@
     <meta name="twitter:image" content="https://ricardomvargas.github.io/og-img-twiiter.png" />
     <meta
       name="twitter:description"
-      content="A passionated Software Engineer (Frontend) | React, Typescript, AI engineering, AI skills, AI agents and +."
+      content="A passionate Software Engineer (Frontend, FullStack and AI Engineering) | React, Typescript, AI engineering, Claude Code, multi-agent, RAG and +."
     />
     <link
       rel="apple-touch-icon"
@@ -61,202 +64,235 @@
     <meta name="theme-color" content="#1a1a1d" />
     <meta
       name="description"
-      content="Ricardo Vargas | Senior Software Engineer | Frontend Architecture"
+      content="Ricardo Vargas | Senior Software Engineer | Frontend, FullStack and AI Engineering"
     />
     <link rel="manifest" href="/manifest.json" />
     <link href="styles/styles.css" rel="stylesheet" />
-    <title>Ricardo Vargas | Senior Software Engineer | Frontend Architecture</title>
+    <title>Ricardo Vargas | Senior Software Engineer | Frontend, FullStack and AI Engineering</title>
   </head>
   <body>
     <header class="header">
       <section class="header__title">
-        <h1>Ricardo Vargas</h1>
-        <h2>Senior Software Engineer</h2>
+        <h1 class="header__name">Ricardo Vargas</h1>
+        <h2 class="header__role">Senior Software Engineer</h2>
       </section>
       <section class="header__social">
         <a
+          class="header__social-link"
           href="https://www.linkedin.com/in/ricardo-m-vargas/"
           rel="noreferrer"
           target="_blank"
           title="Ricardo | Linkedin Profile"
         >
-          <img src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
+          <img class="header__social-icon" src="assets/images/linkedin-mobile.svg" alt="Linkedin" />
         </a>
         <a
+          class="header__social-link"
           href="https://github.com/ricardomvargas"
           rel="noreferrer"
           target="_blank"
           title="Ricardo | GitHub Profile"
         >
-          <img src="assets/images/github-mobile.svg" alt="Github" />
+          <img class="header__social-icon" src="assets/images/github-mobile.svg" alt="Github" />
         </a>
       </section>
     </header>
     <main id="content">
       <section class="about">
-        <div>
+        <div class="about__inner">
           <img
             src="assets/images/profile-pic-square.jpg"
             alt="Ricardo Vargas"
-            class="profile-pic"
+            class="profile-pic about__photo"
           />
-          <div>
-            <p>
-              I'm a Senior Software Engineer specializing in web development and frontend
-              architecture, with strong expertise in JavaScript, TypeScript and React. Throughout my
-              career, I've worked across backend, full stack and frontend roles, helping teams
-              modernize legacy systems, build scalable solutions and improve developer experience.
-            </p>
-            <p>
-              Today, my main focus is building scalable frontend platforms, designing reusable UI
-              systems, modernizing legacy applications and collaborating closely with Product and UX
-              teams to deliver intuitive, maintainable software. While frontend remains my strongest
-              expertise, I also enjoy expanding my backend knowledge through personal projects and
-              volunteer work.
-            </p>
-            <p>
-              I'm passionate about AI-assisted software engineering and enjoy exploring how AI can
-              help engineers work more efficiently and build better software. I enjoy solving
-              challenging technical problems, learning new technologies, mentoring other developers
-              and building software that balances business needs, user experience and engineering
-              excellence.
-            </p>
+          <div class="about__bio">
+            <p class="about__intro">I'm a Senior Software Engineer with over a decade of experience designing, building and modernizing software across frontend, full-stack and backend roles. I help teams turn hard technical problems into scalable, maintainable products, from evolving legacy platforms to shipping new features, and I bring modern AI-assisted engineering practices into everyday development.</p>
           </div>
         </div>
-        <div>
+      </section>
+      <section class="expertise">
+        <header class="expertise__header">
+          <h1 class="expertise__heading">What I do</h1>
+        </header>
+        <ul class="expertise__list">
+          <li class="expertise__item">
+            <div class="expertise__icon">
+              <img class="expertise__icon-img" src="assets/images/expertise-code.svg" alt="" />
+            </div>
+            <div class="expertise__body">
+              <h3 class="expertise__title">Frontend &amp; Backend</h3>
+              <p class="expertise__text">My core stack is TypeScript, JavaScript and React. Over the last several years I've built large-scale web applications, designed frontend architectures and delivered geospatial visualization platforms. I've also worked across the stack, especially with .NET/C#, and keep my backend skills current with Python.</p>
+            </div>
+          </li>
+          <li class="expertise__item">
+            <div class="expertise__icon">
+              <img class="expertise__icon-img" src="assets/images/expertise-architecture.svg" alt="" />
+            </div>
+            <div class="expertise__body">
+              <h3 class="expertise__title">Architecture &amp; collaboration</h3>
+              <p class="expertise__text">I like getting involved before the first line of code: leading technical discovery, shaping architecture and weighing trade-offs. I care about developer experience and work closely with Product and UX so that what we ship solves the real problem, not just the ticket.</p>
+            </div>
+          </li>
+          <li class="expertise__item expertise__item--featured">
+            <div class="expertise__icon">
+              <img class="expertise__icon-img" src="assets/images/expertise-ai.svg" alt="" />
+            </div>
+            <div class="expertise__body">
+              <h3 class="expertise__title">AI-assisted engineering</h3>
+              <p class="expertise__text">AI is part of my professional engineering workflow, well beyond code completion. I work with Claude Code and practice context engineering: project memory files, custom skills and MCP integrations give agents a real understanding of the codebase, its conventions and its tools. I run plan-first, spec-driven workflows and use multiple agents in parallel for exploration, implementation and review, while design decisions, testing and code quality remain my responsibility. The result: faster ramp-up in unfamiliar domains and well-engineered solutions delivered sooner.</p>
+              <ul class="expertise__tags" aria-label="AI practices">
+                <li class="expertise__tag">Claude Code</li>
+                <li class="expertise__tag">Context engineering</li>
+                <li class="expertise__tag">Agent skills</li>
+                <li class="expertise__tag">MCP</li>
+                <li class="expertise__tag">Multi-agent workflows</li>
+                <li class="expertise__tag">Spec-driven development</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="expertise__cta">
+          <p class="expertise__cta-text">Want the full story? Grab a copy of my CV.</p>
           <a href="assets/curriculum/rv.pdf" class="cv-btn" download="ricardo-vargas-cv.pdf">
             <span>Download my full CV</span>
-            <img src="assets/images/download-icon.svg" alt="Download my full CV" />
+            <img class="cv-btn__icon" src="assets/images/download-icon.svg" alt="" />
           </a>
         </div>
       </section>
       <section class="soft-skills">
-        <header>
-          <h1>What make me special</h1>
+        <header class="soft-skills__header">
+          <h1 class="soft-skills__heading">What makes me special</h1>
         </header>
-        <ul>
-          <li>
-            <div class="div-img">
+        <ul class="soft-skills__list">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-communication.svg"
                 alt="Communications Icon"
                 title="Good communications skills"
               />
             </div>
-            <div>
-              <h2 class="title">Good communication</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Good communication</h2>
+              <p class="soft-skills__text">
                 I value open and honest communication. I believe that clear discussions help teams
                 align expectations, solve problems more effectively and build stronger working
                 relationships.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-teamwork.svg"
                 alt="Team work Icon"
                 title="Team work spirit"
               />
             </div>
-            <div>
-              <h2 class="title">Team player</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Team player</h2>
+              <p class="soft-skills__text">
                 I enjoy collaborating with others, sharing knowledge and learning from different
                 perspectives. I’m comfortable asking for help when needed and supporting teammates
                 whenever I can.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-creative-mind.svg"
                 alt="Creativity Icon"
                 title="Creative mindset"
               />
             </div>
-            <div>
-              <h2 class="title">Creative Thinking</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Creative Thinking</h2>
+              <p class="soft-skills__text">
                 I enjoy exploring different perspectives and challenging assumptions. Some of the
                 best solutions emerge when we're willing to look beyond conventional approaches.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-bilingual.svg"
                 alt="Bilingual Icon"
                 title="Bilingual"
               />
             </div>
-            <div>
-              <h2 class="title">Multilingual</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Multilingual</h2>
+              <p class="soft-skills__text">
                 Portuguese is my native language. I’m fluent in English and currently learning
                 Dutch.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-solving-problems.svg"
                 alt="Solving Problems Icon"
                 title="Focus in solving problems"
               />
             </div>
-            <div>
-              <h2 class="title">Problem Solving</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Problem Solving</h2>
+              <p class="soft-skills__text">
                 I enjoy tackling complex problems and finding practical solutions. Once a problem is
                 solved, I believe it's important to understand its root cause and learn from the
                 experience.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-flexible.svg"
                 alt="Flexibility Icon"
                 title="Flexible"
               />
             </div>
-            <div>
-              <h2 class="title">Adaptability</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Adaptability</h2>
+              <p class="soft-skills__text">
                 I’m comfortable stepping outside my comfort zone to learn new technologies, take on
                 unfamiliar challenges or support the needs of the team.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
-              <img src="assets/images/soft-skills-emphaty.svg" alt="Emphaty Icon" title="Empathy" />
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
+              <img class="soft-skills__icon-img" src="assets/images/soft-skills-emphaty.svg" alt="Emphaty Icon" title="Empathy" />
             </div>
-            <div>
-              <h2 class="title">Empathy & Respect</h2>
-              <p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Empathy & Respect</h2>
+              <p class="soft-skills__text">
                 I believe successful teams are built on mutual respect, trust and understanding.
                 Different backgrounds and perspectives make teams stronger.
               </p>
             </div>
           </li>
-          <li>
-            <div class="div-img">
+          <li class="soft-skills__item">
+            <div class="soft-skills__icon">
               <img
+                class="soft-skills__icon-img"
                 src="assets/images/soft-skills-accountability.svg"
                 alt="Accountability Icon"
                 title="Accountability and humbleness"
               />
             </div>
-            <div>
-              <h2 class="title">Accountability and humbleness</h2>
-              <p>I'm not afraid to admit my mistakes, doing so is a great way to evolve.</p>
+            <div class="soft-skills__body">
+              <h2 class="soft-skills__title">Accountability and humbleness</h2>
+              <p class="soft-skills__text">I'm not afraid to admit my mistakes, doing so is a great way to evolve.</p>
             </div>
           </li>
         </ul>

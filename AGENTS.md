@@ -24,14 +24,15 @@ Personal website for Ricardo Vargas - a static HTML/CSS site hosted on GitHub Pa
 The page has two main sections:
 
 ### Header (`header.header`)
-- `.header__title` - Contains h1 (name) and h2 (role)
-- `.header__social` - LinkedIn and GitHub links with SVG icons
+- `.header__title` - Contains `.header__name` (h1) and `.header__role` (h2)
+- `.header__social` - `.header__social-link` anchors with `.header__social-icon` SVGs
 
 ### Main (`main#content`)
-- `.about` - Profile picture (`.profile-pic`), bio paragraphs, CV download button (`.cv-btn`)
-- `.soft-skills` - List of 8 soft skills, each with:
-  - `.div-img` - SVG icon wrapper
-  - `.title` - Skill heading
+- `.about` > `.about__inner` - Intro: profile picture (`.profile-pic.about__photo`) and `.about__bio` with a single `.about__intro` paragraph
+- `.expertise` - "What I do": `.expertise__list` of 3 `.expertise__item` cards, laid out at every size with the icon and title on one row and the text below (`.expertise__icon`, `.expertise__title`, `.expertise__text`; the AI card is `.expertise__item--featured` (full row on large screens) and has a `.expertise__tags` list of `.expertise__tag` pills), followed by `.expertise__cta` with the `.cv-btn` download button
+- `.soft-skills` - `.soft-skills__header`/`.soft-skills__heading`, then `.soft-skills__list` of 8 `.soft-skills__item` cards, each with:
+  - `.soft-skills__icon` / `.soft-skills__icon-img` - SVG icon wrapper
+  - `.soft-skills__body` - `.soft-skills__title` (h2) and `.soft-skills__text`
 
 ## CSS Variables
 
@@ -45,19 +46,21 @@ All values are defined in `:root`:
 - `--color-accent-pink`: `#cc2b5e`
 - `--color-section-bg`: `#26262a`
 
-### Fonts
-- `--font-primary`: `'PT Sans', sans-serif`
+### Fonts (Google Fonts, loaded in index.html)
+- `--font-primary`: `'Inter'` (body text)
+- `--font-heading`: `'Space Grotesk'` (name, headings)
 
-### Typography
-- `--font-size-base`: `1.1em`
-- `--font-size-title`: `1.8em`
-- `--font-size-subtitle`: `1.2em`
+### Typography (fluid, using `clamp()`)
+- `--font-size-base`, `--font-size-small`, `--font-size-subtitle`, `--font-size-title`, `--font-size-hero`
 
 ### Spacing
-- `--spacing-section-mobile`: `2rem 1rem`
-- `--spacing-section-desktop`: `3rem 5rem`
-- `--spacing-icon-small`: `40px`
-- `--spacing-icon-large`: `80px`
+- `--container-width`: `1160px` (max content width)
+- `--gutter`, `--section-padding-block` (fluid)
+- `--spacing-section-mobile` / `--spacing-section-desktop` (desktop centers content within `--container-width`)
+- `--spacing-icon-small` (social icons), `--spacing-icon-large` (soft-skill icons)
+
+### Shape & motion
+- `--radius-card`, `--radius-pill`, `--shadow-card`, `--transition-fast`, `--gradient-accent`
 
 ## CSS Organization
 
@@ -67,15 +70,17 @@ All values are defined in `:root`:
 4. Global classes (`.profile-pic`, `.cv-btn`)
 5. Header styles
 6. About styles
-7. Soft Skills styles
-8. Media queries (`@media (min-width: 801px)`)
+7. Expertise styles
+8. Soft Skills styles
+9. Media queries (601px, 801px, 1101px, prefers-reduced-motion)
 
 ## Responsive Design
 
 - **Mobile-first** approach
-- Two breakpoints: mobile (default) and fullscreen (`min-width: 801px`)
-- Mobile: single column layout, centered elements
-- Desktop: flexbox row layouts, grid for soft-skills
+- Mobile (default): single column, centered header and photo, full-width CV button
+- Tablet (`min-width: 601px`): soft-skills grid with 2 columns
+- Desktop (`min-width: 801px`): header and about switch to rows, sticky profile photo
+- Large desktop (`min-width: 1101px`): soft-skills grid with 4 columns; expertise grid with 2 columns, featured AI card spanning the full row
 
 ## BEM Methodology
 
